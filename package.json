@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
+    "e.js": "^0.0.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "mongodb": "^6.3.0"
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3"
   }
 }
