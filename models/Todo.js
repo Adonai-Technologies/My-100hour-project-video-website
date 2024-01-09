@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const VideoSchema = new mongoose.Schema({
-  video: {
+const TodoSchema = new mongoose.Schema({
+  todo: {
     type: String,
     required: true,
   },
@@ -11,4 +11,4 @@ const VideoSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('Video', VideoSchema)
+module.exports = mongoose.model('Todo', TodoSchema)

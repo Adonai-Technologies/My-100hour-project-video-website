@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Videos</h1>
+    <h1>Todos</h1>
     <ul>
-    <% videos.forEach( el => { %>
+    <% todos.forEach( el => { %>
         <li class='todoItem' data-id='<%=el._id%>'>
             <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
             <span class='del'> Delete </span>
@@ -20,8 +20,8 @@
 
     <h2>Things left to do: <%= left %></h2>
 
-    <form action="/videos/createTodo" method='POST'>
-        <input type="file" placeholder="Enter Todo Item" name='todoItem'>
+    <form action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
         <input class="submitBtn" type="submit">
     </form>
 
