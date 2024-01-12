@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
+const videoRoutes = require('./routes/videos')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -15,7 +16,7 @@ app.use(express.json())
 
 
 app.use('/', mainRoutes)
-
+app.use('/videos', videoRoutes)
 
 
 app.listen(process.env.PORT, ()=>{
